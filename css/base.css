@@ -1,0 +1,496 @@
+/* Cabeçalho */
+
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	background-color: var(--read-primary);
+	position: fixed;
+	z-index: 1;
+	padding: 15px;
+}
+
+.header__logo__container {
+	width: 100%;
+	display: flex;
+	text-decoration: none;
+	font-size: 2em;
+	font-weight: 600;
+	color: #f8f8f8;
+}
+
+
+
+.header__logotipo {
+	width: 60px;
+	height: 60px;
+	margin-left: 35px;
+	margin-right: 5px;
+}
+
+.header__logotipo__text {
+	margin: 10px 0 0 5px;
+}
+
+.header__menuContainer {
+	width: 80%;
+}
+
+.header__menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-right: 40px;
+}
+
+.header__menu__item {
+	margin: 0 10px;
+	transition: transform 0.2s;
+}
+
+.header__menu__item:hover {
+	transform: scale(0.9);
+}
+
+.header__menu__link {
+	text-decoration: none;
+	color: #f8f8f8;
+	font-weight: bold;
+	transition: transform 0.2s;
+}
+
+.header__menu__link:hover {
+	color: #009dff;
+
+}
+
+@media (max-width: 1024px) {
+	.header__logotipo {
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+
+	.header__logo__container {
+		width: 30%;
+	}
+
+	.header {
+		width: 100%;
+	}
+}
+
+/* FIM CONTEUDO HEADER */
+
+
+/* HOME SECTION */
+
+.home__section {
+	width: 100%;
+}
+
+
+.home__banner {
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* FIM DO HOME SECTION */
+
+
+/* SECTION SOBRE NOS */
+
+.sobreNos {
+	display: flex;
+	justify-content: center;
+	padding: 120px 0;
+}
+
+.sobreNos__img {
+	background-image: url("../assets/images/About\ us.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 650px;
+	width: 50%;
+	margin-bottom: 20px;
+	margin-top: -120px;
+	margin-right: 60px;
+}
+
+.sobreNos__conteudo {
+	width: 50%;
+	max-width: 700px;
+	padding: 20px;
+	text-align: justify;
+	line-height: 20px;
+	margin-left: 20px;
+}
+
+.sobreNos__conteudo>h2 {
+	font-family: "Goudy Bookletter 1911", serif;
+	font-size: 3rem;
+	margin-bottom: 20px;
+	text-align: center;
+	padding: 10px;
+	color: #004976;
+}
+
+.sobreNos__conteudo>p {
+	font-family: "Helvetica";
+	font-size: 1.2em;
+}
+
+
+/* FIM DA SECTION SOBRE NOS */
+
+.divider {
+	border: 0.2px solid #d9d9d9;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+
+
+/* SECTION FILOSOFIA/VALOR */
+
+#filosofia {
+	padding: 80px 0;
+}
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	min-height: 600px;
+	padding: 20px;
+}
+
+.valores__title {
+	font-family: "Goudy Bookletter 1911", serif;
+	font-size: 3rem;
+	margin-top: 40px;
+	text-align: center;
+	padding: 10px;
+	color: #004976;
+}
+
+.card {
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 4px 2px 10px 0px rgba(0, 0, 0, 0.5);
+	background-color: #f8f8f8;
+	height: 360px;
+	width: 320px;
+	padding: 10px;
+	transition: transform 0.5s;
+}
+
+.card:hover {
+	transform: scale(0.90);
+}
+
+.card__img {
+	background-image: url("../assets/images/ilustrações/visual.png");
+	height: 60px;
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 10px;
+}
+
+.card>h3 {
+	font-family: "Fredoka One", cursive;
+	margin-top: 10px;
+	font-size: 24px;
+	color: #000;
+	text-align: center;
+}
+
+.card__content {
+	margin-top: 30px;
+	width: 100%;
+	padding-right: 25px;
+	font-size: 0.98em;
+	display: flex;
+	justify-content: center;
+}
+
+.card__content>p {
+	width: 80%;
+	padding: 10px;
+	text-align: left;
+	color: #000;
+}
+
+.card:nth-child(1)>.card__img {
+	background-image: url("../assets/images/ilustrações/goal.png");
+
+}
+
+.card:last-child>.card__img {
+	background-image: url("../assets/images/ilustrações/balance.png");
+	margin-top: -5px;
+}
+
+.card:last-child>.card__content>ul {
+	width: 100%;
+	list-style: inside;
+	text-align: left;
+}
+
+.card:last-child>.card__content>ul>li {
+	margin: 5px 0;
+	margin-left: 30px;
+	text-align: left;
+	color: #000;
+}
+
+
+.valores__list li {
+	padding: 5px 0;
+}
+
+
+/*CONTATOS*/
+
+.contatos {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.contatos_content {
+	width: 100%;
+	padding: 5rem;
+	background-color: var(--read-primary);
+}
+
+.contatos_titulo {
+	font-family: "Goudy Bookletter 1911", serif;
+	font-size: 3em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #f8f8f8;
+}
+
+.contatos_content>ul>li {
+	margin-bottom: 10px;
+	color: #f8f8f8;
+	font-size: 1.015em
+}
+
+.contatos__copyright {
+	color: #f8f8f8;
+	font-size: 1.015em;
+}
+
+
+.js-scroll {
+	opacity: 0;
+	transform: translate3d(-30px, 0, 0);
+	transition: .3s;
+}
+
+.js-scroll.ativo {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+
+@media screen and (max-width: 1024px) {
+
+	.header__logo__container {
+		width: 50%;
+	}
+
+	.header__logo__container h1 {
+		font-size: .9em;
+		width: 60%;
+		margin-left: 5px;
+	}
+
+	.header__menuContainer {
+		width: 50%;
+	}
+
+	.header__menu {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+
+	.home__banner {
+		width: 100%;
+		padding-top: 80px;
+	}
+
+	.sobreNos {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.sobreNos__img {
+		width: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin-left: 40px;
+	}
+
+	.sobreNos__conteudo {
+		width: 93.33%;
+		padding-right: 60px;
+	}
+
+	.cards {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card {
+		margin-top: 30px;
+	}
+
+	.contatos {
+		display: flex;
+	}
+
+	.contatos_content {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+
+	.contato_img {
+		width: 100%;
+		margin: 0;
+		background-size: contain;
+	}
+}
+
+/*  MOBILE SCREEN */
+
+@media screen and (max-width: 700px) {
+
+	.header {
+		padding: 10px 0;
+	}
+
+	.header__logo__container {
+		font-size: .8em;
+		width: 100%;
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.header__logotipo__text {
+		width: 100%;
+		height: 100%;
+		padding: 5px;
+	}
+
+	.header__logo__list {
+		width: 40%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 5px;
+		margin-top: 10px;
+	}
+
+	.header__logo_list li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.header__menuContainer {
+		width: 50%;
+	}
+
+	.header__menu {
+		flex-direction: column;
+		padding-left: 10px;
+	}
+
+	.header__logotipo {
+		width: 50%;
+
+	}
+
+	.header__menu__link {
+		font-size: 14px;
+	}
+
+
+	.home__banner {
+		padding-top: 80px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.sobreNos {
+		flex-direction: column;
+		width: 100%;
+
+	}
+
+	.sobreNos__img {
+		width: 100%;
+	}
+
+	.sobreNos__conteudo {
+		width: 100%;
+		padding: 0;
+	}
+
+	.sobreNos__conteudo>h2 {
+		width: 80%;
+	}
+
+	.sobreNos__conteudo>p {
+		padding: 0;
+		font-size: 14px;
+		padding: 20px;
+		line-height: 15px;
+		width: 80%;
+	}
+
+
+	.card {
+		height: 300px;
+		width: 220px;
+		margin-top: 40px;
+		margin-right: 40px;
+	}
+
+	.card__content {
+		font-size: .8em;
+	}
+
+	.valores__list {
+		font-size: 12px;
+		margin-top: -8px;
+	}
+
+	.contatos__list {
+		padding: 0 10px;
+		font-size: 12px;
+	}
+
+	.contatos__copyright {
+		padding: 0 10px;
+		font-size: 12px;
+	}
+}
